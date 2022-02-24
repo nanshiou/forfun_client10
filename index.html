@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>Loading10</title>
+</head>
+
+<body>
+    <main class="fullPage">
+        <div class="bgswitch">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="image-container" style="background-image:url('images/img01.webp');"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-container" style="background-image:url('images/img02.webp');"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-container" style="background-image:url('images/img03.webp');"></div>
+                    </div>
+                </div>
+            </div>     
+        </div>
+        <div class="app-download">
+            <header class="header">
+                <div class="logo-box">
+                    <figure>
+                        <img class="img-responsive logo" src="images/logo_w.png" alt="">
+                    </figure>
+                </div>
+            </header>
+            <div class="container">
+                <div class="content-left">
+                    <div class="app-intro">
+
+                        <div class="title-box">
+                            <figure>
+                                <img class="img-responsive" src="images/title.png" class="img-responsive" alt="">
+                            </figure>
+                        </div>
+                        <div class="download-box">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-ios"><i class="icon-ios"></i>iPhone 下载</a>
+                                <a href="#" class="btn btn-android"><i class="icon-android"></i>Android 下载</a>
+                            </div>
+                            <div class="qrcode-group">
+                                <figure>
+                                    <img class="img-responsive qrcode" src="images/qrcode.jpg" alt="">
+                                </figure>
+                                <p class="desc">手机扫码下载</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <div class="img-box">
+                        <figure>
+                            <img class="img-responsive" src="images/app-images.webp" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        let swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            slidesPerView: 1,
+            effect: "fade",
+            // spaceBetween: 20,
+            centeredSlides: true,
+            paginationClickable: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+    </script>
+</body>
+
+</html>
